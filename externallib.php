@@ -45,12 +45,10 @@ class local_ws_get_admins_external extends external_api {
      * @return external_description
      */
     public static function get_admin_ids_returns() {
-        return new external_multiple_structure(
-                new external_single_structure(
-                        array(
-                            'admin_id' => new external_value(PARAM_INT, 'admin id', VALUE_DEFAULT, null),
-                        )
-                )
-        );
+	    return new external_single_structure([
+		    'admins' => new external_multiple_structure([
+				new external_value(PARAM_INT, 'admin id', VALUE_DEFAULT, null),
+		    ])
+        ]);
     }
 }
