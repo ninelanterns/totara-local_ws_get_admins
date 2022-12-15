@@ -10,6 +10,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_ws_get_admins';
 $plugin->maturity  = MATURITY_STABLE;
-$plugin->release = \local_core\ComposerPluginInfo::getInstance()->getInstalledPluginVersion('pluginname');
+$plugin->release = \local_core\ComposerPluginInfo::getInstance()->getInstalledPluginVersion('apac-local-ws-get-admins');
 $plugin->requires  = 2017051500;
 $plugin->version   = 2020073000;
